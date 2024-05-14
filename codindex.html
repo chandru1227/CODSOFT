@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" href="https://tse2.mm.bing.net/th?id=OIP.iEtQHT-7JD4GtdP8bwhP-gHaHa&pid=Api&P=0&h=180">
+  </link>
+  <title>Landing page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: "Poppins", sans-serif;
+    }
+
+    .nav-link {
+      margin-left: 100px;
+      background: linear-gradient(to left, black 50%, lightblue 50%) right;
+      background-size: 200%;
+      transition: .5s ease-out;
+      padding-left: -10px;
+      padding-right: 10px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      color: white;
+      border-style: solid;
+      border-color: aqua;
+      border-width: 1px;
+      border-radius: 5px;
+    }
+
+    .nav-link:hover {
+      background-color: yellow;
+      color: black;
+      border-style: solid;
+      border-color: aqua;
+      background-position: left;
+      transform: scale(1.2);
+    }
+
+    ul {
+      padding-right: 10px;
+    }
+
+    a {
+      padding-left: 5px;
+    }
+
+    .para {
+      border-radius: 5px;
+      border-color: grey;
+      border-style: solid;
+      /* background-color: white; */
+      margin-right: 30px;
+      display: inline-block;
+      color: rgb(255, 255, 255);
+      font-size: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-top: 16px;
+      cursor: pointer;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    .beflogo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 70px 0;
+    }
+
+    .container-fluid {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .paraa {
+      font-size: 50px;
+      line-height: 30px;
+      margin-right: 11%;
+    }
+
+    .collapse {
+      padding-left: 5%;
+    }
+
+    .btn button {
+      padding: 5px;
+      border: none;
+      border-radius: 10px;
+      background-color: aqua;
+    }
+
+    .fea-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .card-1 {
+      background-color: aliceblue;
+      width: 300px;
+      padding: 10px;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    .f-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      justify-content: center;
+      align-items: center;
+      gap: 5%;
+    }
+
+    .library-section {
+      background-color: #f0f0f0;
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    .library-section h2 {
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    .library-section .card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+    }
+
+    .library-section .card img {
+      width: 100px;
+      border-radius: 50%;
+    }
+
+    .library-section .card h3 {
+      margin-top: 20px;
+    }
+
+    .contact-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 50px;
+    }
+
+    .contact-icons {
+      display: flex;
+      justify-content: space-between;
+      width: 200px;
+      margin-top: 20px;
+    }
+
+    .contact-icons img {
+      width: 50px;
+      height: auto;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .contact-icons img:hover {
+      transform: scale(1.2);
+    }
+
+    /* Media Queries */
+    @media only screen and (max-width: 992px) {
+      .nav-link {
+        margin-left: 50px;
+      }
+    }
+
+    @media only screen and (max-width: 768px) {
+      .nav-link {
+        margin-left: 20px;
+      }
+
+      .container-fluid {
+        flex-direction: column;
+      }
+
+      .paraa {
+        margin-right: 0;
+        text-align: center;
+      }
+    }
+
+    @media only screen and (max-width: 576px) {
+      .nav-link {
+        margin-left: 10px;
+      }
+
+      .beflogo {
+        flex-direction: column;
+      }
+
+      .paraa {
+        margin-right: 0;
+        text-align: center;
+      }
+
+      .fea-container {
+        padding: 0 20px;
+      }
+
+      .f-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .card-1 {
+        width: 250px;
+      }
+    }
+  </style>
+</head>
+
+<body style="background-color: black;">
+  <nav class="navbar navbar-expand-sm">
+    <div class="container-fluid">
+      <div class="txt">
+        <h1 style="color: white;">Online Library</h1>
+      </div>
+      <!-- <img src="book-removebg-preview.png" alt="furniture" class="logo-img"> -->
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="codindex.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="collections.html">Collections</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">My Books</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Book Now</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">SignUp</a>
+          </li>
+        </ul>
+        <p class="para">Let's Chat</p>
+      </div>
+    </div>
+  </nav>
+  <div class="beflogo">
+    <div class="lib-logo">
+      <img src="https://cdni.iconscout.com/illustration/premium/thumb/students-studying-online-2974943-2477369.png"
+        alt="imgs" height="600px" width="750px">
+    </div>
+    <div class="paraa">
+      <p style="color: white;">Online Library</p><br>
+      <p style="color: white; font-size: 25px;">Digital repository offering vast knowledge, accessible worldwide,
+        fostering learning, research, and innovation for all.</p>
+      <div class="btn">
+        <button>Get Started</button>
+      </div>
+    </div>
+  </div>
+  <div>
+
+    <h1 style="font-family: Stencil Std, fantasy; color: whitesmoke; text-align: center;" id>Resources</h1>
+  </div>
+
+  <div class="fea-container">
+    <div class="f-container">
+      <div class="card-1">
+        <img src="https://cdn1.iconfinder.com/data/icons/basic-ui-elements-color/700/09_search-1024.png" alt=""
+          width="100" class="logo">
+        <h1>Researchers</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab</p>
+      </div>
+
+      <div class="card-1">
+        <img src="https://webstockreview.net/images/honest-clipart-believable-13.png" alt=""
+          width="100" class="logo">
+        <h1>Librarian</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab</p>
+      </div>
+
+      <div class="card-1">
+        <img src="team.png" alt=""
+          width="100" class="logo">
+        <h1>Societies</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab</p>
+      </div>
+      <div class="card-1">
+        <img src="https://www.clipartmax.com/png/full/39-392427_open-author-icon-png.png" alt=""
+          width="85" class="logo">
+        <h1>Authors</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab</p>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <hr>
+
+  <!-- Library Section -->
+  <section class="library-section">
+    <div class="container">
+      <h2>Discover Our Library</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <center>
+            <img src="https://authority.pub/wp-content/uploads/2019/03/Unforgettable-Book-Title.jpg" alt="Book Image" class="book-image">
+          </center><h3>Unforgettable</h3>
+            <!-- <p>Description of the book goes here.</p> -->
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <center>
+            <img src="https://authority.pub/wp-content/uploads/2022/10/AP-EOP-TP-Set-3-1-2.png" alt="Book Image" class="book-image">
+          </center> <h3>Uploads</h3>
+            <!-- <p>Description of the book goes here.</p> -->
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <center>
+            <img src="https://www.writersdigest.com/.image/t_share/MTcxMDY0NzcxMzI1NDA0NDIx/image-placeholder-title.jpg" alt="Book Image" class="book-image">
+          </center><h3>Writersdigest</h3>
+            <!-- <p>Description of the book goes here.</p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="featured-books">
+    <div class="container">
+      <h2 style="color: aliceblue;">Featured Books</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://s-i.huffpost.com/gen/1148926/images/o-CLASSIC-BOOKS-ORIGINAL-COVERS-facebook.jpg" alt="Book Image" class="book-image">
+            <h3>Classic</h3>
+            <!-- <p>Description of the book goes here.</p> -->
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://visme.co/blog/wp-content/uploads/2021/06/fiction-book-cover-template-visme.jpg" alt="Book Image" class="book-image">
+            <h3>One-Two-Three</h3>
+            <!-- <p>Description of the book goes here.</p> -->
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://m.media-amazon.com/images/I/51S4VEe99IL.jpg" alt="Book Image" class="book-image">
+            <h3>Blogspot</h3>
+            <!-- <p>Description of the book goes here.</p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials-section">
+    <div class="container">
+      <h2 style="color: #f0f0f0;">Testimonials</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://miblart.com/wp-content/uploads/2020/10/eYTiC-I4-scaled.jpeg" alt="User Image" class="user-image">
+            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec leo pulvinar, faucibus metus vel, -->
+              <!-- convallis ligula. Aenean et convallis ante.</p> -->
+            <!-- <h3>User Name</h3> -->
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="http://static1.squarespace.com/static/51142d0be4b067782b66f751/t/540ddb32e4b0566ddac8c239/1410194228383/?format=1500w" alt="User Image" class="user-image">
+            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec leo pulvinar, faucibus metus vel, -->
+              <!-- convallis ligula. Aenean et convallis ante.</p> -->
+            <!-- <h3>User Name</h3> -->
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://authority.pub/wp-content/uploads/2022/10/AP-EOP-TP-Set-3-1-2.png" alt="User Image" class="user-image">
+            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec leo pulvinar, faucibus metus vel, -->
+              <!-- convallis ligula. Aenean et convallis ante.</p> -->
+            <!-- <h3>User Name</h3> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="container">
+      <center>
+      <h2 style="color:beige;">Contact Us</h2>
+    </center>
+      <div class="contact-container">
+        <p style="color: aqua;">Have any questions? Feel free to contact us!</p>
+        <div class="contact-icons">
+          <img src="http://pngimg.com/uploads/email/email_PNG11.png" alt="Email">
+          <img src="http://pluspng.com/img-png/phone-png-clipart-1667.png" alt="Phone">
+          <img src="https://static.vecteezy.com/system/resources/previews/009/589/758/original/location-location-pin-location-icon-transparent-free-png.png" alt="Location">
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
